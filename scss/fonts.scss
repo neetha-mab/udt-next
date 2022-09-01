@@ -1,0 +1,32 @@
+@font-face {font-family: "CountachWeb"; src: url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.eot"); src: url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.svg#CountachWeb") format("svg"); }
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('/fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Extrabld.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('/fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$primary-font : 'Proxima Nova Rg';
+$secondary-font: "CountachWeb";
+$proxima-bold: 'Proxima Nova Th';
+
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-bold: 900;

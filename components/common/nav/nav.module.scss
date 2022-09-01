@@ -1,0 +1,137 @@
+@import '../../../scss/style.scss';
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    background: $black;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    transition-duration: 0.5s;
+
+    &.active_dropdown {
+        right: 0;
+        transition-duration: 0.5s;
+    }
+
+    @include media(768px){
+        position: static;
+        background: none;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .close_btn {
+        color: $white;
+        font-size: 28px;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+
+        @include media(768px){
+            display: none;
+        }
+    }
+
+    nav {
+        width: 100%;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            @include media(768px){
+                flex-direction: row;
+            }
+
+            li {
+                a {
+                    font-family: $primary-font;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.29;
+                    letter-spacing: 0.28px;
+                    text-align: center;
+                    color: $white;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    display: block;
+                    padding: 15px 25px;
+                    transition-duration: 0.5s;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+
+                    &.btn_primary {
+                        color: $white;
+                        background-color: $primary-color;
+                        font-weight: $bold;
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 1;
+                        transition-duration: 0.5s;
+
+                        &:before {
+                            z-index: -1;
+                            left: -100%;
+                            top: 0%;
+                            width: 50%;
+                            height: 100%;
+                            content: "";
+                            position: absolute;
+                            background: $black;
+                            transition-duration: 0.5s;
+                        }
+
+                        &:after {
+                            z-index: -1;
+                            right: -100%;
+                            top: 0%;
+                            width: 50%;
+                            height: 100%;
+                            content: "";
+                            position: absolute;
+                            background: $black;
+                            transition-duration: 0.5s;
+                        }
+
+                        &:hover {
+                            color: $primary-color;
+                            
+                            &::before {
+                                left: 0;
+                                transition-duration: 0.5s;
+                            }
+
+                            &::after {
+                                right: 0;
+                                transition-duration: 0.5s;
+                            }
+                        }
+                    }
+
+                    @include media(768px){
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.toggle_button {
+    width: 34px;
+    height: 28px;
+
+    @include media(768px){
+        display: none;
+    }
+}

@@ -1,0 +1,182 @@
+@import '../../../scss/style.scss';
+
+.why_we_are_here {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image_wrap {
+        width: 100%;
+
+        @include media(1024px){
+            width: 50%;
+        }
+
+        .mobile {
+            display: block;
+
+            @include media(1024px){
+                display: none;
+            }
+        }
+
+        .desktop {
+            display: none;
+
+            @include media(1024px){
+                display: block;
+            }
+        }
+    }
+
+    .text_wrap {
+        width: 100%;
+        padding: 50px 30px 32px 30px;
+        
+
+        @include media(1024px){
+            width: 50%;
+            max-width: 635px;
+        }
+
+        @include media(1200px){
+            padding: 50px 30px 32px 80px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: 1.36px;
+            text-align: left;
+            color: $black;
+
+            br {
+                display: none;
+
+                @include media(1024px){
+                    display: block;
+                }
+            }
+
+            @include media(1024px){
+                font-size: 68px;
+            }
+        }
+
+        p {
+            font-family: $primary-font;
+            font-size: 21px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: $black;
+            text-transform: uppercase;
+            margin-top: 18px;
+            margin-bottom: 25px;
+
+            @include media(1024px){
+                font-size: 36px;
+                margin-bottom: 44px;
+                margin-top: 28px;
+            }
+        }
+
+        .block_outer_wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            position: relative;
+
+            .first_heading {
+                border: solid 4px #000;
+                padding: 22px 22px 22px 22px;
+                width: 100%;
+                
+
+                @include media(1024px){
+                    width: 80%;
+                    padding: 30px 110px 30px 30px;
+                    margin-bottom: 82px;
+                }
+
+                h3 {
+                    font-family: $primary-font;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.25;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: $black;
+
+                    @include media(1200px){
+                        font-size: 24px;
+                    }
+
+                    br {
+                        display: none;
+
+                        @include media(1024px){
+                            display: block;
+                        }
+                    }
+
+                    span {
+                        font-size: 24px;
+                        font-weight: 900;
+                        line-height: 1;
+                        color: $primary-color;
+                        font-family: $proxima-bold;
+                        padding-left: 5px;
+
+                        @include media(1200px){
+                            font-size: 36px;
+                            padding-left: 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .second_heading {
+                width: calc(100% - 44px);
+                margin-left: auto;
+                background-color: $black;
+                padding: 27px 25px;
+                position: relative;
+                margin: 0 auto;
+                top: -20px;
+
+                @include media(1024px){
+                    max-width: 210px;
+                    left: auto;
+                    top: 26px;
+                    position: absolute;
+                    right: 0;
+                    width: 95%;
+                }
+
+                h4 {
+                    font-family: $proxima-bold;
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.29;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: $white;
+
+                    @include media(1200px){
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

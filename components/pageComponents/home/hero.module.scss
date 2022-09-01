@@ -1,0 +1,84 @@
+@import '../../../scss/style.scss';
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: $black;
+
+    .hero_overlayer {
+        position: relative;
+        margin-top: -172px;
+        padding-bottom: 76px;
+
+        @include media(768px){
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 0;
+            padding-top: 20px;
+            margin-top: 0px;
+        }
+
+        @include media(1200px){
+            padding-top:80px;
+        }
+
+        .container {
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 38px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.11;
+            letter-spacing: 0.76px;
+            color: $white;
+
+            @include media(768px){
+                font-size: 55px;
+                line-height: 1.1;
+                letter-spacing: 1.88px;
+            }
+
+            @include media(1200px){
+                font-size: 94px;
+                line-height: 1.1;
+                letter-spacing: 1.88px;
+            }
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        p {
+            max-width: 470px;
+            font-family: $primary-font;
+            font-size: 21px;
+            padding: 30px 0;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.42;
+            letter-spacing: normal;
+            text-align: left;
+            color: $white;
+
+            @include media(768px){
+                font-size: 24px;
+            }
+        }
+
+        .btn_primary {
+            width: 100%;
+
+            @include media(480px){
+                max-width: 276px;
+            }
+        }
+    }
+
+}
