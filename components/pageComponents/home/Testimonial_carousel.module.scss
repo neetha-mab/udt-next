@@ -1,0 +1,100 @@
+@import '../../../scss/style.scss';
+
+.testimonial_carousel {
+    background: url('/images/section-bg.png') left top no-repeat;
+    background-size: cover;
+    padding: 58px 0 0 0;
+
+    .container {
+        flex-direction: column;
+    }
+
+    h4 {
+        font-family: $secondary-font;
+        font-size: 36px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: 1.36px;
+        text-align: center;
+        color: $white;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+
+        @include media(992px){
+            font-size: 68px;
+            max-width: 100%;
+            line-height: 1;
+        }
+    }
+
+    .carousel_wrap {
+        position: relative;
+        max-width: 100%;
+        margin: 30px auto;
+
+        @include media(992px){
+            top: 50px;
+            margin-top: 0 ;
+            max-width: 784px;
+        }
+    }
+
+    .swiper_slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media(992px){
+            flex-direction: row;
+        }
+        
+        .image_wrap {
+            width: 60%;
+            max-width: 353px;
+
+            @include media(992px){
+                width: 40%;
+            }
+        }
+
+        .text_wrap {
+            position: relative;
+            top: 0px;
+            margin-top: 30px;
+
+            @include media(992px){
+                top: -50px;
+                margin-left: 66px;
+                margin-top: 0;
+            }
+
+            p {
+                font-family: $primary-font;
+                font-size: 24px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.25;
+                letter-spacing: normal;
+                text-align: center;
+                color: $white;
+                max-width: 363px;
+
+                span {
+                    font-size: 18px;
+                    display: block;
+                    font-weight: normal;
+                    padding-top: 5px;
+                }
+
+                @include media(992px){
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

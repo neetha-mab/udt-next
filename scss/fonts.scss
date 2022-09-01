@@ -1,3 +1,5 @@
+@import url('https://use.typekit.net/hsl4fzk.css');
+
 @font-face {font-family: "CountachWeb"; src: url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.eot"); src: url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/518a5b02a5198232adbb0ff63ac2d8bb.svg#CountachWeb") format("svg"); }
 
 @font-face {
@@ -21,6 +23,10 @@
 $primary-font : 'Proxima Nova Rg';
 $secondary-font: "CountachWeb";
 $proxima-bold: 'Proxima Nova Th';
+
+// $primary-font : "proxima-nova",sans-serif;
+// $secondary-font: "countach",sans-serif;
+// $proxima-bold: "proxima-nova-extra-condensed",sans-serif;;
 
 $thin: 100;
 $light: 300;

@@ -1,0 +1,98 @@
+@import '../../../scss/style.scss';
+
+.plain_vertical_carousel {
+    background: $black url('/images/plain-carousel-mobile.png') left top no-repeat;
+    padding: 67px 0;
+    background-size: contain;
+
+    @include media(992px){
+        background: url('/images/plain-carousel.png') left top no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .text_wrapper {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        padding-bottom: 30px;
+
+        @include media(992px){
+            width: 40%;
+            padding-bottom: 0;
+        }
+
+        @include media(1024px){
+            top: -50px;
+        }
+
+        h3 {
+            font-family: $proxima-bold;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.13;
+            letter-spacing: normal;
+            text-align: left;
+            color: $white;
+            max-width: 299px;
+
+            @include media(1024px){
+                font-size: 32px;
+                max-width: 339px;
+            }
+        }
+
+        hr {
+            border: none;
+            border-bottom: 1px solid $primary-color;
+            margin: 25px 0;
+        }
+
+        p {
+            font-family: $primary-font;
+            
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.44;
+            letter-spacing: normal;
+            text-align: left;
+            color: $white;
+            padding-bottom: 25px;
+            padding-right: 30px;
+
+            @include media(992px){
+                max-width: 408px;
+            }
+
+            @include media(1024px){
+                padding-right: 0;
+            }
+        }
+
+        .btn {
+            padding: 15px 45px;
+        }
+    }
+
+    .slider_wrapper {
+        width: 100%;
+
+        @include media(992px){
+            width: 60%;
+        }
+
+
+        .custom_changes {
+            border: solid 4px $primary-color;
+            border-radius: 4px;
+        }
+    }
+}

@@ -167,3 +167,26 @@ ul li {
 	list-style: none;
 	display: block;
 }
+
+.slider_one .swiper-pagination {
+    text-align: left;
+    position: static;
+    margin-top: 22px;
+}
+
+.slider_one .swiper-pagination-bullet {
+    height: 19px;
+    width: 19px;
+    background: #b7b7b7;
+    border-radius:50%;
+    opacity: 9;
+    margin: 0 10px !important;
+}
+
+.slider_one .swiper-pagination-bullet-active {
+    background: #bc2c3a;
+}
+
+@media(max-width:992px){
+    .slider_one .swiper-pagination { text-align: center; }
+}

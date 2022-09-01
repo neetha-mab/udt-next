@@ -1,7 +1,11 @@
 import React from 'react'; 
 import Layout from '../components/common/Layout';
+import CourseDetails from '../components/pageComponents/home/CourseDetails';
 import Hero from '../components/pageComponents/home/Hero';
+import NavySeal from '../components/pageComponents/home/NavySeal';
+import PlainVerticalCarousel from '../components/pageComponents/home/PlainVerticalCarousel';
 import SmallQuote from '../components/pageComponents/home/SmallQuote';
+import TestimonialCarousel from '../components/pageComponents/home/TestimonialCarousel';
 import WhyWeAreHere from '../components/pageComponents/home/WhyWeAreHere';
 
 const HeroData = [
@@ -26,7 +30,7 @@ const WhyWeHereData = [
         headingTwo: `<h4>Learn what to do if you’re in danger.</h4>`
       },
       {
-        heading: `<h3><span>77% of shots fired miss </span>the target if it's over 6 ft away</h3>`,
+        heading: `<h3><span>77% of shots <br/>fired miss </span>the target if it's over 6 ft away</h3>`,
         headingTwo: `<h4>Improve your accuracy and stop the threat.</h4>`
       },
       {
@@ -47,6 +51,10 @@ export default function Home() {
       <Hero data={HeroData} />
       <WhyWeAreHere data={WhyWeHereData} />
       <SmallQuote />
+      <PlainVerticalCarousel />
+      <NavySeal />
+      <TestimonialCarousel />
+      <CourseDetails />
     </Layout>
   )
 }

@@ -1,0 +1,131 @@
+@import '../../../scss/style.scss';
+
+.course_details {
+    padding: 40px 0 0 0;
+
+    @include media(992px){
+        padding: 89px 0 0 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    h3 {
+        font-family: $secondary-font;
+        font-size: 36px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 1.36px;
+        text-align: center;
+        color: $black;
+        width: 100%;
+
+        @include media(992px){
+            font-size: 68px;
+        }
+    }
+
+    h4 {
+        font-family: $primary-font;
+        font-size: 21px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.28;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        padding-top: 20px;
+        margin-bottom: 0px;
+
+        @include media(992px){
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .fifty_percent {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 15px;
+
+        @include media(768px){
+            width: 50%;
+        }
+
+        &.text_wrap {
+            
+            @include media(768px){
+                padding-left: 30px;
+            }
+
+            @include media(1200px){
+                padding-left: 176px;
+            }
+        }
+
+        img {
+            max-width: 578px;
+        }
+
+        p {
+            font-family: $primary-font;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.44;
+            letter-spacing: normal;
+            text-align: left;
+            color: $black;
+            padding-bottom: 15px;
+        }
+
+        .btn_primary {
+            margin-top: 15px;
+            padding: 15px 45px;
+            width: 100%;
+
+            @include media(480px){
+                width: auto;
+            }
+        }
+
+        .video_icon {
+            position: relative;
+
+            button {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                width: 93px;
+                height: 93px;
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+
+                @include media(768px){
+                    width: 191px;
+                    height: 191px;
+                }
+            }
+        }
+    }
+
+    .link_boxes {
+        .col_3 {
+            width: 33.33%;
+            padding: 0 24px;
+        }
+    }
+    
+}

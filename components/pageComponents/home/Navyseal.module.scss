@@ -1,0 +1,97 @@
+@import '../../../scss/style.scss';
+
+.navy_seal {
+    display: flex;
+    background: url('/images/udt-red-black-logo-flat.png') left top no-repeat;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    padding-bottom: 50px;
+
+    @include media(768px){
+        background: $gray2;
+        padding-bottom: 0;
+    }
+
+    .image_wrapper {
+        width: 100%;
+
+        @include media(768px){
+            width: 60%;
+        }
+
+        .desktop {
+            display: none;
+
+            @include media(768px){
+                display: block;
+            }
+        }
+
+        .mobile {
+            display: block;
+            padding: 44px 44px 20px 44px;
+
+            @include media(768px){
+                display: none;
+            }
+        }
+    }
+
+    .text_wrapper {
+        width: 100%;
+        padding: 30px;
+        @include media(768px){
+            width: 40%;
+            padding-left: 0;
+        }
+
+        h4 {
+            font-family: $proxima-bold;
+            font-size: 24px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.13;
+            letter-spacing: normal;
+            text-align: left;
+            color: $black;
+
+            @include media(768px){
+                font-size: 32px;
+            }
+        }
+
+        p {
+            font-family: $primary-font;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.44;
+            letter-spacing: normal;
+            text-align: left;
+            color: $black;
+            max-width: 437px;
+            padding: 25px 0;
+
+            @include media(768px){
+                font-size: 18px;
+            }
+        }
+
+        a {
+            font-size: 18px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: 0.36px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $primary-color;
+            font-family: $proxima-bold;
+        }
+    }
+}
