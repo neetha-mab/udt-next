@@ -1,0 +1,62 @@
+@import '../../../scss/style.scss';
+
+.promotion {
+    background: url('/images/regret-mobile.png') left top no-repeat;
+    background-size: cover;
+    padding: 222px 0 112px 0;
+
+    @include media(768px){
+        background: url('/images/regret.jpg') left top no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    h4 {
+        font-family: $secondary-font;
+        font-size: 36px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 1.36px;
+        text-align: center;
+        color: $white;
+        max-width: 221px;
+        margin: 0 auto;
+
+        @include media(480px){
+            max-width: 100%;
+        }
+
+        @include media(992px){
+            font-size: 68px;
+        }
+    }
+
+    p {
+        font-family: $primary-font;
+        font-size: 21px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.28;
+        letter-spacing: normal;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 887px;
+        color: $white;
+        margin: 30px auto;
+
+        @include media(992px){
+            font-size: 36px;
+        }
+    }
+
+    .btn {
+        margin: 0 auto;
+        padding: 15px 40px;
+    }
+}

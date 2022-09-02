@@ -72,6 +72,14 @@ table {
   box-sizing: border-box;
 }
 
+main {
+    margin-top: 119px;
+}
+
+@media(max-width:767px){
+    main {margin-top: 87px;}
+}
+
 h1 {
     font-family: "CountachWeb";
     font-size: 68px;

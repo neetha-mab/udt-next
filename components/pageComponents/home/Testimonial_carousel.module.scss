@@ -38,7 +38,8 @@
         @include media(992px){
             top: 50px;
             margin-top: 0 ;
-            max-width: 784px;
+            max-width: 1100px;
+            padding: 0 45px;
         }
     }
 
@@ -67,7 +68,7 @@
             margin-top: 30px;
 
             @include media(992px){
-                top: -50px;
+                top: -29px;
                 margin-left: 66px;
                 margin-top: 0;
             }
@@ -95,6 +96,48 @@
                     text-align: left;
                 }
             }
+        }
+    }
+
+    .left_button {
+        width: 13px;
+        height: 30px;
+        background: none;
+        padding: 0;
+        border: none;
+        outline: none;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translate(-50%);
+        cursor: pointer;
+        z-index: 99;
+
+        @include media(768px){
+            top: 40%;
+            width: 18px;
+            height: 47px;
+        }
+    }
+
+    .right_button {
+        width: 13px;
+        height: 30px;
+        background: none;
+        padding: 0;
+        border: none;
+        outline: none;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%);
+        cursor: pointer;
+        z-index: 99;
+
+        @include media(768px){
+            top: 40%;
+            width: 18px;
+            height: 47px;
         }
     }
 }

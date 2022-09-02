@@ -4,6 +4,7 @@ import CourseDetails from '../components/pageComponents/home/CourseDetails';
 import Hero from '../components/pageComponents/home/Hero';
 import NavySeal from '../components/pageComponents/home/NavySeal';
 import PlainVerticalCarousel from '../components/pageComponents/home/PlainVerticalCarousel';
+import Promotion from '../components/pageComponents/home/Promotion';
 import SmallQuote from '../components/pageComponents/home/SmallQuote';
 import TestimonialCarousel from '../components/pageComponents/home/TestimonialCarousel';
 import WhyWeAreHere from '../components/pageComponents/home/WhyWeAreHere';
@@ -55,6 +56,7 @@ export default function Home() {
       <NavySeal />
       <TestimonialCarousel />
       <CourseDetails />
+      <Promotion />
     </Layout>
   )
 }
