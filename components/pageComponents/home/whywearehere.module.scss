@@ -21,6 +21,7 @@
 
         .desktop {
             display: none;
+            height: 100%;
 
             @include media(1024px){
                 display: block;
