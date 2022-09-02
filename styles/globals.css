@@ -203,6 +203,6 @@ ul li {
     .slider_one .swiper-pagination-bullet { width: 15px; height: 15px;}
 }
 
-section {
+main {
     overflow-x: hidden;
 }
