@@ -6,9 +6,25 @@
     position: relative;
     background: $black;
 
+    .desktop {
+        display: none;
+
+        @include media(768px){
+            display: block;
+        }
+    }
+
+    .mobile {
+        display: block;
+
+        @include media(768px){
+            display: none;
+        }
+    }
+
     .hero_overlayer {
         position: relative;
-        margin-top: -172px;
+        margin-top: -125px;
         padding-bottom: 76px;
 
         @include media(768px){

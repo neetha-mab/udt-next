@@ -75,7 +75,7 @@
 
             p {
                 font-family: $primary-font;
-                font-size: 24px;
+                font-size: 18px;
                 font-weight: 500;
                 font-stretch: normal;
                 font-style: normal;
@@ -83,7 +83,13 @@
                 letter-spacing: normal;
                 text-align: center;
                 color: $white;
-                max-width: 363px;
+                max-width: 273px;
+                
+
+                @include media(768px){
+                    font-size: 24px;
+                    max-width: 363px;
+                }
 
                 span {
                     font-size: 18px;

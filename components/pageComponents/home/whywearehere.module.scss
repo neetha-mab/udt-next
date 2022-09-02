@@ -31,12 +31,13 @@
 
     .text_wrap {
         width: 100%;
-        padding: 50px 30px 32px 30px;
+        padding: 50px 20px 32px 20px;
         
 
         @include media(1024px){
             width: 50%;
             max-width: 635px;
+            padding: 50px 30px 32px 30px;
         }
 
         @include media(1200px){
@@ -128,7 +129,7 @@
                     }
 
                     span {
-                        font-size: 24px;
+                        font-size: 22px;
                         font-weight: 900;
                         line-height: 1;
                         color: $primary-color;
@@ -148,7 +149,7 @@
                 width: calc(100% - 44px);
                 margin-left: auto;
                 background-color: $black;
-                padding: 27px 25px;
+                padding: 27px 18px;
                 position: relative;
                 margin: 0 auto;
                 top: -20px;
@@ -160,11 +161,12 @@
                     position: absolute;
                     right: 0;
                     width: 95%;
+                    padding: 27px 25px;
                 }
 
                 h4 {
                     font-family: $proxima-bold;
-                    font-size: 24px;
+                    font-size: 23px;
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;

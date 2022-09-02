@@ -198,3 +198,11 @@ ul li {
 @media(max-width:992px){
     .slider_one .swiper-pagination { text-align: center; }
 }
+
+@media(max-width:480px){
+    .slider_one .swiper-pagination-bullet { width: 15px; height: 15px;}
+}
+
+section {
+    overflow-x: hidden;
+}

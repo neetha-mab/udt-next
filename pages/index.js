@@ -12,6 +12,7 @@ import WhyWeAreHere from '../components/pageComponents/home/WhyWeAreHere';
 const HeroData = [
   {
     imageUrl: '/images/hero.png',
+    imageUrl2: '/images/hero-mobile.png',
     alt: `hero`,
     title: `Train to be safe.<br/>Train to be confident.<br/><span>Train to survive.</span>`,
     desc: `The first immersive firearm and self-defense training program of its kind. Sign up for a free introductory training course.`

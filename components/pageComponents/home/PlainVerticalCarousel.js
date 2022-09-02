@@ -40,17 +40,23 @@ const PlainVerticalCarousel = () => {
             >
               <SwiperSlide className={styles.custom_changes}>
                 <Image src={'/images/slider.png'} alt={'slider'} width={693} height={500} layout={'responsive'} />
+                <h4>How do you<span>REACT</span><br/>if you’re being followed <br/>down the street?</h4>
               </SwiperSlide>
               <SwiperSlide className={styles.custom_changes}>
                 <Image src={'/images/slider.png'} alt={'slider'} width={693} height={500} layout={'responsive'} />
+                <h4>How do you<span>REACT</span><br/>if you’re being followed <br/>down the street?</h4>
               </SwiperSlide>
               <SwiperSlide className={styles.custom_changes}>
                 <Image src={'/images/slider.png'} alt={'slider'} width={693} height={500} layout={'responsive'} />
+                <h4>How do you<span>REACT</span><br/>if you’re being followed <br/>down the street?</h4>
               </SwiperSlide>
               <SwiperSlide className={styles.custom_changes}>
                 <Image src={'/images/slider.png'} alt={'slider'} width={693} height={500} layout={'responsive'} />
+                <h4>How do you<span>REACT</span><br/>if you’re being followed <br/>down the street?</h4>
               </SwiperSlide>
             </Swiper>
+
+            <Link href={'#'} passHref><a href='replace' className={`${styles.btn} ${styles.btn_primary}`}>Try Our Program</a></Link>
             </div>
         </div>
     </section>
